@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{ 
+            background-color: rgb(2, 2, 2);
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .nav{
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 19.50%;
+            height: 50px;
+            display: inline-block;
+            text-align: center;
+            padding-top: 15px;
+            color: white;
+        }
+
+        @media (max-width:768px){
+            .nav{
+                display: block;
+                border: none;
+                margin-left: 40%;
+            }
+            .container{
+                background-color: gray;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="nav home">Home</div>
+        <div class="nav about">About</div>
+        <div class="nav services">Services</div>
+        <div class="nav port">Portfolio</div>
+        <div class="nav contact">Contact</div>
+    </nav>
+</body>
+</html>
